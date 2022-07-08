@@ -38,8 +38,15 @@ cargo run -- clean -h
 ```
 
 
-### Run
+### Setup Wallet
+To interact with Serum DEX you have to fund your wallet with some SOL tokens. To add appropriate token account into your wallet which is used in Serum DEX market, run:
 
+```console
+spl-token transfer <MARKET_MINT_ADDRESS> <AMOUNT> <YOUR_WALLET_ADDRESS> --fund-recipient
+```
+
+
+### Run
 First of all, we need to generate and initialize accounts for market. __init__ subcommand is used to initialize market:
 
 ```console
