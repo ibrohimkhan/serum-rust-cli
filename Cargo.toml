@@ -1,0 +1,31 @@
+[package]
+name = "serum-rust-cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+no-entrypoint = []
+test-bpf = []
+
+[dependencies]
+solana-sdk = "1.10.15"
+solana-client = "1.10.15"
+spl-token = { version = "3.3", features = ["no-entrypoint"], default-features = false }
+spl-associated-token-account = "1.0.5"
+serum_dex = {git = "https://github.com/project-serum/serum-dex.git", features = ["no-entrypoint"]}
+anyhow = "1.0.32"
+bytemuck = {version = "1.7.2", features= ["derive"]}
+borsh = "0.9.1"
+clap = { version = "3.2.5", features = ["derive"] }
+rand = "0.7.3"
+debug_print = "1.0.0"
+safe-transmute = "0.11.0"
+
+[dev-dependencies]
+serum_dex = {git = "https://github.com/project-serum/serum-dex.git", features = ["no-entrypoint"]}
+solana-program-test = "1.10.15"
+
+[lib]
+crate-type = ["cdylib", "lib"]
