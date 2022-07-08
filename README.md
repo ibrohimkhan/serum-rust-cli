@@ -1,4 +1,4 @@
-### CLI to interact with OrderBook
+### CLI to interact with Serum DEX
 A simple CLI application to interact with Serum to place a new order in orderbook, fetch open orders, metch orders and settle funds.
 
 ### Help
