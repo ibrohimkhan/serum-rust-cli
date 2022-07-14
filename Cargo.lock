@@ -1906,6 +1906,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "orderbook-client"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "borsh",
+ "bytemuck",
+ "clap 3.2.5",
+ "debug_print",
+ "rand 0.7.3",
+ "safe-transmute",
+ "serum_dex",
+ "solana-client",
+ "solana-program-test",
+ "solana-sdk",
+ "spl-associated-token-account",
+ "spl-token",
+]
+
+[[package]]
 name = "os_str_bytes"
 version = "6.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2738,25 +2757,6 @@ dependencies = [
  "ryu",
  "serde",
  "yaml-rust",
-]
-
-[[package]]
-name = "serum-rust-cli"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "borsh",
- "bytemuck",
- "clap 3.2.5",
- "debug_print",
- "rand 0.7.3",
- "safe-transmute",
- "serum_dex",
- "solana-client",
- "solana-program-test",
- "solana-sdk",
- "spl-associated-token-account",
- "spl-token",
 ]
 
 [[package]]

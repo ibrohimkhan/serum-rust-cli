@@ -1,5 +1,5 @@
 [package]
-name = "serum-rust-cli"
+name = "orderbook-client"
 version = "0.1.0"
 edition = "2021"
 
