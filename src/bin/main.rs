@@ -11,10 +11,10 @@ use serum_dex::{
 use solana_client::rpc_client::RpcClient;
 use solana_sdk::{pubkey::Pubkey, signer::Signer};
 
-use orderbook_client::*;
+use serum_rust_cli::*;
 
 #[derive(Parser, Debug)]
-#[clap(author = "RHO Markets", version, about)]
+#[clap(author = "Ibrokhim Kholmatov", version, about)]
 #[clap(propagate_version = true)]
 /// A simple CLI application to interact with Serum DEX to place new order, fetch orders, match orders and settle funds.
 struct Arguments {
